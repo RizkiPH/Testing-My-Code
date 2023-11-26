@@ -1,0 +1,49 @@
+#include <iostream> 
+
+using namespace std;
+
+int mangga = 10000;
+int salak = 4000;
+int pepaya = 7000;
+int namaBuah, totalBuah, belanja;
+
+int main() {
+	cout << "SELAMAT DATANG DI TOKO BUAH ^_^ " << endl;
+	cout << "Silahkan Masukkan Buah Yang Anda Beli Di Bawah Ini" << endl;
+	cout << "Buah : ";
+	cin >> namaBuah;
+
+	switch (namaBuah) {
+	case 1:
+		cout << "anda memilih buah mangga" << endl;
+		namaBuah = mangga;
+		break;
+	case 2:
+		cout << "anda memilih buah salak" << endl;
+		namaBuah = salak;
+		break;
+	case 3:
+		cout << "anda memilih buah pepaya" << endl;
+		namaBuah = pepaya;
+		break;
+	default:
+		cout << "Maaf untuk saat ini stok masih belum tersedia :(";
+		break;
+	}
+
+	cout << "Masukkan total buah anda (kilogram) : ";
+	cin >> totalBuah;
+	if (namaBuah == mangga)
+	{
+		cout << "Biaya yang anda harus bayar : " << totalBuah * mangga << endl;
+	}
+	else if (namaBuah == salak)
+	{
+		cout << "Biaya yang anda harus bayar : " << totalBuah * salak << endl;
+	}
+	else if (namaBuah == pepaya)
+	{
+		cout << "Biaya yang anda harus bayar : " << totalBuah * pepaya << endl;
+	}
+	cout << "Terima Kasih Sudah Berbelanja Di Toko Kami ^_^ " << endl;
+}
